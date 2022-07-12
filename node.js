@@ -19,3 +19,6 @@ const historyNormal = function (event) {
 }
 
 historyUrl.addEventListener("mouseover", historyRed);
+
+historyUrl.addEventListener("mouseout", historyNormal);
+
