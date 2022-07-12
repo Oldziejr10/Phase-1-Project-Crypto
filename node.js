@@ -56,4 +56,11 @@ function bitcoinClick() {{
     priceIndex.appendChild(price);
 }
 function rippleClick() {
-    
+    priceIndex.innerHTML = '';
+    let price = document.createElement('div');
+    let coin = cryptoArray.find(element => element.name == 'ripple')
+    price.innerHTML = `
+        <h2> Ripple Price: $${coin.current_price} </h2>`
+    priceIndex.appendChild(price);
+
+}
