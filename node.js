@@ -17,3 +17,5 @@ const historyRed = function (event) {{
 const historyNormal = function (event) {
     event.target.style.color = "black"
 }
+
+historyUrl.addEventListener("mouseover", historyRed);
