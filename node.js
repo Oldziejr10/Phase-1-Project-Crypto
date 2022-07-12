@@ -35,4 +35,12 @@ function getCoinPrice() {
         .then(data => {{ 
             let cryptoData = data
             for (let i = 0; i < cryptoData.length; i++) {
-        }
+                if (cryptoData[i].id == 'bitcoin' || cryptoData[i].id == 'ethereum' || cryptoData[i].id == 'ripple') {
+                    let pair = {'name': cryptoData[i].id, 'current_price': cryptoData[i].current_price}
+                    cryptoArray.push(pair);
+                }
+        };
+    })
+
+}
+        
