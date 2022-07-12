@@ -46,4 +46,6 @@ function getCoinPrice() {
 
 
 getCoinPrice();
+
+function bitcoinClick() {
         
