@@ -26,3 +26,4 @@ window.addEventListener('load', alertMsg);
 
 bitcoinBtn.addEventListener('click', bitcoinClick)
 rippleBtn.addEventListener('click', rippleClick)
+ethBtn.addEventListener('click', ethClick)
