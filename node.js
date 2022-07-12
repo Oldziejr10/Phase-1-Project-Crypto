@@ -5,3 +5,7 @@ const binanceUrl = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=u
 const historyUrl = document.querySelector(".url")
 let priceIndex = document.querySelector(".add-crpyto-price")
 let cryptoArray = [];
+
+const alertMsg = function (event) {
+    alert('PLEASE DO NOT USE THIS INFORMATION TO MAKE INVESTING DECISIONS')
+}
