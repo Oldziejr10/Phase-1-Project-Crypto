@@ -64,3 +64,4 @@ function rippleClick() {
     priceIndex.appendChild(price);
 
 }
+function ethClick() {
