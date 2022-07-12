@@ -65,3 +65,10 @@ function rippleClick() {
 
 }
 function ethClick() {
+    priceIndex.innerHTML = '';
+    let price = document.createElement('div');
+    let coin = cryptoArray.find(element => element.name == 'ethereum')
+    price.innerHTML = `
+        <h2> Ethereum Price: $${coin.current_price} </h2>`
+    priceIndex.appendChild(price);
+}
