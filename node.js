@@ -22,3 +22,5 @@ historyUrl.addEventListener("mouseover", historyRed);
 
 historyUrl.addEventListener("mouseout", historyNormal);
 
+window.addEventListener('load', alertMsg);
+
