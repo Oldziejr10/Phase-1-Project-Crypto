@@ -17,20 +17,13 @@ const historyNormal = function (event) {
 }
 
 historyUrl.addEventListener("mouseover", historyRed);
-
 historyUrl.addEventListener("mouseout", historyNormal);
-
 window.addEventListener('load', alertMsg);
-
 bitcoinBtn.addEventListener('click', bitcoinClick)
-
 rippleBtn.addEventListener('click', rippleClick)
-
 ethBtn.addEventListener('click', ethClick)
 
-
 function getCoinPrice() {
-
     fetch(binanceUrl)
         .then(response => response.json())
         .then(data => {
@@ -48,17 +41,14 @@ function getCoinPrice() {
 getCoinPrice();
 
 function bitcoinClick() {
-
     priceIndex.innerHTML = '';
     let price = document.createElement('div');
     let coin = cryptoArray.find(element => element.name == 'bitcoin')
     price.innerHTML = `
         <h2> Bitcoin Price: $${coin.current_price} </h2>`
     priceIndex.appendChild(price);
-
-
-
 }
+
 function rippleClick() {
     priceIndex.innerHTML = '';
     let price = document.createElement('div');
@@ -66,7 +56,6 @@ function rippleClick() {
     price.innerHTML = `
         <h2> Ripple Price: $${coin.current_price} </h2>`
     priceIndex.appendChild(price);
-
 }
 
 function ethClick() {
