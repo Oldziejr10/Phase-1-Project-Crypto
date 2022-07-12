@@ -25,4 +25,4 @@ historyUrl.addEventListener("mouseout", historyNormal);
 window.addEventListener('load', alertMsg);
 
 bitcoinBtn.addEventListener('click', bitcoinClick)
-
+rippleBtn.addEventListener('click', rippleClick)
