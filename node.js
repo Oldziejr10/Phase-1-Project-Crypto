@@ -47,5 +47,11 @@ function getCoinPrice() {
 
 getCoinPrice();
 
-function bitcoinClick() {
-        
+function bitcoinClick() {{
+    priceIndex.innerHTML = '';
+    let price = document.createElement('div');
+    let coin = cryptoArray.find(element => element.name == 'bitcoin')
+    price.innerHTML = `
+        <h2> Bitcoin Price: $${coin.current_price} </h2>`
+    priceIndex.appendChild(price);
+}
