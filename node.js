@@ -32,4 +32,7 @@ function getCoinPrice() {
 
     fetch(binanceUrl)
         .then(response => response.json())
-        .then(data => {
+        .then(data => {{ 
+            let cryptoData = data
+            for (let i = 0; i < cryptoData.length; i++) {
+        }
