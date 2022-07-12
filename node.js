@@ -10,5 +10,7 @@ const alertMsg = function (event) {
     alert('PLEASE DO NOT USE THIS INFORMATION TO MAKE INVESTING DECISIONS')
 }
 
-const historyRed = function (event) {
+const historyRed = function (event) {{
     event.target.style.color = "red";
+}
+
