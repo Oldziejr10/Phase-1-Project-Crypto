@@ -55,3 +55,5 @@ function bitcoinClick() {{
         <h2> Bitcoin Price: $${coin.current_price} </h2>`
     priceIndex.appendChild(price);
 }
+function rippleClick() {
+    
