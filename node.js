@@ -14,3 +14,6 @@ const historyRed = function (event) {{
     event.target.style.color = "red";
 }
 
+const historyNormal = function (event) {
+    event.target.style.color = "black"
+}
